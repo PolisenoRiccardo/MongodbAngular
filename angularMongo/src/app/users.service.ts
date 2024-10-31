@@ -22,7 +22,7 @@ export class UsersService {
   }
 
   getUser(mail: string,password:string) {
-    const apiLog = `https://5000-simonefines-mongodbangu-ytalh0u1z0t.ws-eu116.gitpod.io/api/login/${mail}&${password}`;
+    const apiLog = `http://localhost:5000//api/login/${mail}&${password}`;
     return this.http.get(apiLog);
   }
 }
